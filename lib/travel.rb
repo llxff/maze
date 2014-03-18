@@ -9,7 +9,7 @@ class Travel
   def find_way_to(target_point)
     road = [Point.new(@start_point.x, @start_point.y)]
 
-    while !road.empty?
+    until road.empty?
       current_point = road.shift
 
       if current_point.x == target_point.x and current_point.y == target_point.y
