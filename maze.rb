@@ -26,4 +26,4 @@ until way.nil?
   way = way.previous_brick
 end
 
-puts simple_map.inject('') { |map, tr| map + tr.join('') + $/ }
+puts simple_map.inject('') { |map, tr| map + tr.join + $/ }
