@@ -21,7 +21,7 @@ simple_map = simple_map.split("\n").map { |line|
 travel = Travel.new(Map.new(simple_map), Point.new(1, 4))
 way = travel.find_way_to(Point.new(10, 4))
 
-while !way.nil?
+until way.nil?
   simple_map[way.y][way.x] = '-'
   way = way.previous_brick
 end
